@@ -21,12 +21,12 @@ public class LBWorker {
 	//Do work sets the queue, then checks how many worker we have. If we have
 	//More than 12, we wait until we don't have 
 	public void doWork() {
-		synchronized(this) {
+		synchronized(q) {
 			q = LBListener.getQueue();		//Set the queue to the Listeners queue
-			
+		
 			//If there are 12 or more workers, we wait until a worker is free
 			while(Thread.activeCount() > 12) {
-				System.out.println("The threads are busy or the queue is empty, try again.");	
+					
 			}	
 			
 			//If the queue is empty, start a new thread, and remove the request from the queue

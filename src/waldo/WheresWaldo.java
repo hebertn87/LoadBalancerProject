@@ -8,7 +8,7 @@ public class WheresWaldo implements Runnable {
 	public void run() {
 		int rand = 0;
 		while(rand != 5555) {
-			rand = ThreadLocalRandom.current().nextInt(0, 9999);
+			rand = ThreadLocalRandom.current().nextInt(0, 999999999);
 		}
 	}
 }

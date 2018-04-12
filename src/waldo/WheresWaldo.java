@@ -10,6 +10,5 @@ public class WheresWaldo implements Runnable {
 		while(rand != 5555) {
 			rand = ThreadLocalRandom.current().nextInt(0, 9999);
 		}
-		System.out.println("We solved it!");
 	}
 }

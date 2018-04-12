@@ -2,17 +2,21 @@ package requestMaker;
 
 public class RequestMaker {
 	
-	private Boolean request;
+	private Boolean request = false;
+	private Integer id;
 	
-	public RequestMaker() {
-		request = false;
-	}
-	
-	public void setRequest(Boolean _request) {
+	public RequestMaker(Boolean _request, Integer _id) {
 		request = _request;
+		id = _id;
 	}
 	
-	public Boolean getRequest() {
+	public Boolean GetRequest() {
 		return request;
 	}
+	
+	public Integer GetId() {
+		return id;
+	}
+	
+	
 }
